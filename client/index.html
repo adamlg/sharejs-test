@@ -44,6 +44,7 @@ cm.editor().on('cursorActivity', function(){
 var elem = document.getElementById('pad');
 // 
 var ws = new WebSocket('wss://' + window.location.host );
+console.log('ws',ws)
 // 
 var sjs = new window.sharejs.Connection( ws );
 console.log('sjs',sjs)
